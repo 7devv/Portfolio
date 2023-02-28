@@ -35,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/Portfolio/Images/25368.jpg) no-repeat center center fixed; /*Sets background image to fit correctly*/
+  background: url(/Images/25368.jpg) no-repeat center center fixed; /*Sets background image to fit correctly*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -107,7 +107,7 @@ body {
 
 
 .project1 {
-  background: url(/Portfolio/Images/cssbattle.png) no-repeat center;
+  background: url(/Images/cssbattle.png) no-repeat center;
   background-size: 200px;
   background-position: 6px 130px;
   background-color: black;
@@ -115,28 +115,28 @@ body {
 }
 
 .project2 {
-  background: url(/Portfolio/Images/management2.png) no-repeat center;
+  background: url(../Images/management2.png) no-repeat center;
   background-size: 200px;
   background-position: 13px 170px;
   background-color: black;
 }
 
 .project3 {
-  background: url(/Portfolio/Images/IBM_logo.svg.png) no-repeat center;
+  background: url(Portfolio/Images/IBM_logo.svg.png) no-repeat center;
   background-size: 180px;
   background-position: 16px 170px;
   background-color: black;
 }
 
 .project4 {
-  background: url(/Portfolio/Images/shopify.png) no-repeat center;
+  background: url(Images/shopify.png) no-repeat center;
   background-size: 110px;
   background-position: 50px 130px;
   background-color: black;
 }
 
 .project5 {
-  background: url(/Portfolio/Images/timeline.png) no-repeat center;
+  background: url(../timeline.png) no-repeat center;
   background-size: 120px;
   background-position: 55px 140px;
   background-color: black;
