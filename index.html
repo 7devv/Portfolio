@@ -1,0 +1,98 @@
+<!-- 
+To do list 
+-Add certification space
+-Git/github, HTML, CSS, JavaScript, XML, Wordpress, Shopify, Stack Overflow, Google Analytics, Firebase, VSCode, Pycharm, Notepad++
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+  <link rel="manifest" href="Favicon/site.webmanifest">
+  <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Devon Potter | Web Developer</title>
+</head>
+<body>
+  
+  <nav id="navbar">
+    <div class="name">
+      <a>Devon | Web Dev</a>
+    </div>
+    <a href="#welcome-section">Start</a>
+    <a href="#projects">Projects</a>
+    <a id="profile-link" href="https://github.com/7devv" target="_blank">GitHub</a>
+  </nav>
+  <section id="welcome-section">
+    <h1 id="introduction">Hi, my name is <a class="nameplate">Devon Potter</a><br>I have a <a
+        class="passion">passion</a> for
+      <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+        <script class="morph" src="/Portfolio/morph.js"></script>
+
+      </div>
+      <!-- Sets blur amount for morph text (JS) -->
+      <svg id="filters" width="100px">
+        <defs>
+          <filter id="threshold" width="100px">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -120" />
+          </filter>
+        </defs>
+      </svg>
+    </h1>
+    <img id="profilepic" src="/Portfolio/Images/profilephoto.png" alt="userimg">
+  </section>
+  <section id="projecttitle">
+    <h1 id="projecthead">Current Projects</h1>
+  </section>
+  <section id="projects">
+    
+    <a href="https://cssbattle.dev/" target="_blank">
+      <div class="project-tile project1">
+        <h2>CSS Mastery<br><span id="secondary">with CSSBattles</span></h2>
+      </div>
+    </a>
+  
+    <a href="https://www.bmwautopartswholesale.com/" target="_blank">
+      <div class="project-tile project2">
+        <h2>Page Management<br><span id="secondary">& fullfilment</span></h2>
+      </div>
+    </a>
+    <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer" target="_blank">
+      <div class="project-tile project3">
+        <h2>IBM Program<br><span id="secondary">Full-Stack Training</h2>
+    </div>
+  </a>
+  <a href="https://www.shopify.com/" target="_blank">
+    <div class="project-tile project4">
+      <h2>E-commerce<br><span id="secondary">Deployment</h2>
+      
+    </div>
+    </a>
+    <a href="/Portfolio/Simple CRUD App/index.html" target="_blank">
+    <div class="project-tile project5">
+      <h2>Basic CRUD Application</h2>
+    </div>
+    </a>
+  </section>
+  <!--
+  <section id="certifications">
+    <h1>Certifications</h1>
+  </section>
+  <section id="knowledge">
+    <h1>Knowledge Base</h1>
+  </section>
+  -->
+</body>
+
+</html>

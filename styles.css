@@ -1,0 +1,322 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Scroll bar customization */
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(0, 0, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  
+}
+
+#welcome-section {
+  height: 100vh; /* Set the height of the welcome section to be equal to the height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../Portfolio/Images/25368.jpg) no-repeat center center fixed; /*Sets background image to fit correctly*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#navbar {
+  position: fixed; /* Keep the navbar at the top of the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #0e0e0e9a;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  gap: 1em;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 1.3em
+}
+
+#navbar a:hover:not(:first-child) {
+  text-shadow: 0px 0px 2px white;
+  transition: .4s;
+}
+
+#projects {
+  padding: 10em 2em;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.project-tile {
+  display: inline-block;
+  border: 2px solid #ccc;
+  margin-inline: 1em;
+  padding: 1em;
+  width: 180px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 8px rgb(0, 0, 0);
+  position: relative;
+}
+
+.project-tile:hover {
+  transform: scale(110%) rotate(2deg);
+  transition: all 1s;
+}
+
+/* Creates variety in hover animation effect */
+.project2:hover, .project4:hover {
+  transform: scale(110%) rotate(-2deg);
+  transition: all 1s;
+}
+
+
+
+.project1 {
+  background: url(../Portfolio/Images/cssbattle.png) no-repeat center;
+  background-size: 200px;
+  background-position: 6px 130px;
+  background-color: black;
+  
+}
+
+.project2 {
+  background: url(../Portfolio/Images/management2.png) no-repeat center;
+  background-size: 200px;
+  background-position: 13px 170px;
+  background-color: black;
+}
+
+.project3 {
+  background: url(../Portfolio/Images/IBM_logo.svg.png) no-repeat center;
+  background-size: 180px;
+  background-position: 16px 170px;
+  background-color: black;
+}
+
+.project4 {
+  background: url(../Portfolio/Images/shopify.png) no-repeat center;
+  background-size: 110px;
+  background-position: 50px 130px;
+  background-color: black;
+}
+
+.project5 {
+  background: url(../Portfolio/Images/timeline.png) no-repeat center;
+  background-size: 120px;
+  background-position: 55px 140px;
+  background-color: black;
+}
+
+#secondary {
+  font-size: 1rem;
+}
+/* */
+@media (max-width: 1286px) {
+  .project-tile {
+    margin: 20px;
+    
+  }
+}
+
+@media (max-width: 1286px) {
+  #projects {
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+}
+
+
+#introduction {
+  font-size: clamp(1.5em, 5vw, 3rem);
+  display: block;
+  letter-spacing: -2px;
+  margin-bottom: 200px;
+}
+
+@media (min-width: 290px) {
+  .name {
+    flex:1 1;
+  }
+}
+
+/* Mobile responsive navbar */
+@media (max-width: 400px) {
+  .name {
+    display: none;
+  }
+  #navbar {
+    justify-content: space-evenly;
+  }
+}
+
+.passion {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #8b22fc 33%,
+    #ff1361 66%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: passion 4s linear infinite;
+      font-size: 1.5em;
+}
+
+@keyframes passion {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#navbar a:first-child { /* Color for top left name */
+  color: rgb(153, 0, 255);
+}
+
+#container {
+  display: block;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(.6px);
+  text-transform: uppercase;
+}
+
+/* Morphing text */
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 1000;
+  font-size: clamp(1.5em, 5vw, 3rem);
+  
+  text-align: center;
+  z-index: 9;
+  user-select: none;
+}
+
+.nameplate {
+  color: white;
+}
+
+#profilepic {
+  border-radius: 50%;
+	text-decoration: none;
+	transition: all .4s ease-in-out;
+	border: 4px black solid;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	animation: float 6s ease-in-out infinite;
+	position: absolute;
+  width: clamp(150px, 250px, 30vw);
+}
+
+@media (min-width: 1286px) {
+  #profilepic {
+    margin-left: 60vw;
+    margin-top: -10vw;
+  }
+  #introduction {
+    margin-right: 40vw;
+  }
+}
+
+@media (max-width: 1286px) {
+  #profilepic {
+    margin-top: 45%;
+  }
+}
+
+/* animation for profilepic */
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+#certifications {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272727;
+}
+
+#knowledge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272727;
+  
+}
+
+h1 {
+  font-family: monospace;
+  font-size: clamp(1vw, 20px, 30px);
+}
+
+#projecthead {
+  font-size: max(20px, 30px);
+  color: white;
+  background: #1b1b1b;
+  overflow: hidden;
+}
+
+#projecttitle {
+  background: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
